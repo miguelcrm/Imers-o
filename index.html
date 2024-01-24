@@ -6,42 +6,94 @@
     <meta charset="UTF-8"> <!-- Forma de codificação -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Reponsividade -->
     <title>Spotify Imersão</title> <!-- Título da página -->
+    <link rel="stylesheet" href="reset.css" class="rel"> <!--Reset das configurações padrões de arquivos HTML -->
     <link rel="stylesheet" href="style.css"> <!-- Conexão do CSS com o HTML -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" class="rel">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" class="rel">
+
 </head>
 
 <body> <!-- Corpo da página -->
     
 <!-- Bloco 1 --><div class="sidebar"> <!--Bloco para agrupamento de elementos -->
         
-        <nav> <!-- Tag de Menus -->
+        <nav class="sidebar__navigation"> <!-- Tag de Menus -->
             
-            <div> <!-- Bloco 2 -->
+            <div class="logo"> <!-- Bloco 2 -->
                 
                 <a href=""> <!--Link-->
                     <img src="./assets/icons/logo-spotify.png" alt="Logo">
                 </a>
 
+            </div>
                 <div> <!-- Bloco 2.2 -->
                     
                     <ul> <!-- Lista -->
                         
                         <li>
-                            <a href=""> <span> </span> </a> <!-- Span == TAG DE LINHA, usado para pequenas partes do código -->
+                            <a href=""> 
+                            <span class="fa fa-home"></span>
+                            <span>Início</span>       
+                            </a> <!-- Span == TAG DE LINHA, usado para pequenas partes do código -->
                         </li> <!-- Elemento 1 da lista -->
                         
                         <li>
-
+                            <a href=""> 
+                            <span class="fa fa-search"></span>
+                            <span>Buscar</span>       
+                            </a> <!-- Span == TAG DE LINHA -->
                         </li>
 
                     </ul>
 
                 </div>
+        </nav>
+
+        <div class="library">
+
+            <div class="library__content">
+    
+                <button class="library__button">
+                    <span class="fa fas fa-book"></span>
+                    <span>Sua Biblioteca</span>
+                </button>
+                <span class="fa fa-plus"></span>           
+            </div>
+
+            <section class="section_playlist"> 
+
+                <div class="section-playlist__content">
+
+                    <span class="text title">Crie sua playlist</span>
+
+                    <span class="text subtitle">É facil, vamos te ajudar.</span>
+
+                    <button class="playlist__button">
+                        <span>Criar playlist</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+            <div class="cookies">
+
+                <a href="">Cookies</a>
 
             </div>
 
-        </nav> <!-- Tag de Menus -->
+            <div class="languagens">
 
-    </div>
+                <button class="languagens__button">
+
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+
+                </button>
+
+            </div>
+
+        </div>
 
 </body>
 
