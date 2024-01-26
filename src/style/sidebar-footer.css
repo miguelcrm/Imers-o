@@ -1,0 +1,214 @@
+body {
+    background-color: black; /* Cor da página inteira */
+    font-family: var(--font-dm-sans);
+}
+
+.sidebar {
+    position: fixed; /* O elemento será fixo na página */ 
+    top: 0; /* Nenhum espaço do topo */
+    left: 0; /* Nenhum espaço a esquerda */
+    bottom: 0; /* Nenhum espaçamento da margem de baixo */
+    padding: 8px;
+    /* Quando o padding utilizado com só 1 elemento, ele aplicará aquele tamanho a todos as direções */
+
+    width: 300px; /* Largura do bloco */
+}
+
+.sidebar__navigation {
+    background-color: #131313;
+    border-radius: 8px; /* Arredonda as bordas do elemento aplicado */
+    padding: 16px 0 0 16px; /* Espaçamento do elemento em relação a margem */
+    /* padding: cima direita baixo esquerda */
+}
+
+.sidebar__navigation .logo {
+    background: #131313;
+    display: flex;
+    border-radius: 8px; 
+    padding: 16px 0 0 16px;
+}
+
+.logo img {
+    width: 80px; /* Largura da imagem */
+}
+
+.sidebar nav ul {
+    margin-top: 20px; /* Será o tamanho do espaçamento do elemento que esteja acima dele */
+    padding: 0px 20px 10px 20px;
+}
+
+.sidebar ul li {
+    padding: 10px 0px; /* Utilizando apenas 2 elementos, o 1º será cima e baixo, e o 2º será direita e esquerda */
+}
+
+.sidebar nav ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600; /* Esse é a expessura dá fonte */
+    font-size: 16px;
+}
+
+
+.library {
+    background-color: #131313; /* Cor da div*/
+    border-radius: 8px;
+    display: flex; /* Torna os itens do container mais flexível para direcionamento */
+    justify-content: space-between; /* Justifica o contéudo */
+    flex-direction: column; /* Trabalhando junto com o ''flex'', ele determina a direção */
+    padding: 4px 8px; 
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 9px;
+}
+
+.library .library__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library__button {
+    display: flex;
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center; /* Centraliza do texto no container que se encontra*/
+    text-decoration: none;
+    text-transform: 0; /* Usada para deixar o texto com algum formato, como todas em Maiúsculas */
+    padding: 20px 10px;
+}
+
+.library .library__button .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+.library .library__content .fa-plus {
+    margin: 24px 10px;
+}
+
+.section-playlist {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px; /* Usada para definir os espaçamentos para o justify */
+    background-color: #242424;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+
+.section-playlist .section-playlist__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist__content .text {
+    padding-bottom: 14px; /* Esoaçamento do borda inferior do elemento */
+    color: #fff;
+}
+
+.section-playlist__content .title {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.section-playlist__content .subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0px 0px 0px 1px;
+}
+
+.section-playlist__content .section-playlist__button {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 18px;
+    border: 0px;
+    font-size: 12px;
+    font-weight: 750;
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    margin-top: 10px;
+    width: 113px;
+}
+
+.sidebar .cookies {
+    margin: 25px 20px;
+}
+
+.sidebar .cookies a {
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.sidebar .cookies a:hover {
+    text-decoration: underline;
+}
+
+.languagens .languagens__button {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #878787; /* 1º tamanho do cortono, 2º tipo de borda, 3º cor da borda*/
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    width: 170px;
+    margin: 10px;
+    padding: 8px;
+}
+
+.footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+}
+.footer .footer-text {
+    flex-shrink: 0; /* Se houver espaço no container ele irá encolher um elemento */
+}
+
+.footer-text .footer-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.footer-text .footer-subtitle {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-button button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
